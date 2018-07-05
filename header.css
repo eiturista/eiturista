@@ -1,0 +1,50 @@
+header{
+  height: 45px;
+  background-color: rgb(109, 91, 151);
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+}
+
+header div:nth-child(2){
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > div{
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+
+.logotipo{
+  height: 45px;
+}
+
+header input{
+  border-radius: 25px;
+  border: 0;
+  height: 30px;
+  background-image: url(img/lupa.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  margin: 0 5px;
+}
+
+header > div > a{
+  height: 30px;
+}
+
+#icone_perfil{
+  margin: 5px;
+}
+
+#icone_carrinho{
+  margin: 5px;
+}
+
+@media(max-width: 400px){
+  header input{
+    display: none;
+  }
+}

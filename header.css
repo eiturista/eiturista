@@ -1,9 +1,12 @@
 header{
+  width: 100%;
   height: 45px;
   background-color: rgb(109, 91, 151);
   display: flex;
   align-items: center;
-  padding: 0 3%;
+  position: fixed;
+  top: 0;
+  justify-content: center;
 }
 
 header div:nth-child(2){
@@ -12,13 +15,14 @@ header div:nth-child(2){
 }
 
 header > div{
-  width: 50%;
+  width: 45%;
   height: 100%;
   align-items: center;
 }
 
-.logotipo{
+#logotipo{
   height: 45px;
+  margin: 0;
 }
 
 header input{
@@ -37,14 +41,15 @@ header > div > a{
 
 header > div > a > img{
   height: 20px;
+  margin: 5px;
 }
 
 #icone_lupa{
   display: none;
 }
 
-header > div > a > img{
-  margin: 5px;
+#espaço{
+  height: 45px;
 }
 
 @media(max-width: 400px){

@@ -39,22 +39,12 @@ header > div > a > img{
   height: 20px;
 }
 
-#icone_perfil{
-  margin: 5px;
-}
-
-#icone_carrinho{
-  margin: 5px;
-}
-
 #icone_lupa{
   display: none;
-  margin: 5px;
 }
 
-#icone_mala{
+header > div > a > img{
   margin: 5px;
-  border-radius: 10px;
 }
 
 @media(max-width: 400px){

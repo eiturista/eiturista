@@ -1,0 +1,19 @@
+#primeira{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+#primeira > h1{
+  color: rgb(109, 91, 151);
+}
+
+@media(max-width: 400px){
+  #primeira{
+    width: 100%;
+    margin: 0 5%;
+  }
+}

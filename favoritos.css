@@ -1,8 +1,49 @@
 #favorito{
-    margin-left: 5vw;
+    margin-left: -1000px;
     margin-top: 6vw;
-}
-h2{
-    color:rgb(109,91,151);
+    display: flex;
+    justify-content: space-evenly;
+
 }
 
+h2{
+    color:rgb(109,91,151);
+    margin-bottom: 50px;
+    right: 400px;
+    border-bottom: rgb(109, 91, 151) solid 1px;
+}
+
+.maps{
+    position: absolute;
+    left: 64px;
+    width: 650px;
+    height: 300px;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-right: 50px;
+}
+.caixinha{
+    position: absolute;
+}
+
+#favorito div:nth-child(2){
+    
+    background: #cb60b3; 
+    /* Old browsers */
+    background: -moz-linear-gradient(bottom, rgb(109, 91, 151) 0%, rgb(135, 105, 157) 49%, #a80077 10   0%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(bottom, rgb(109, 91, 151) 0%,rgb(135, 105, 157) 49%,#a80077 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, #cb60b3 0%,rgb(135, 105, 157) 49%,rgb(109, 91, 151) 100%); 
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
+
+    height: 400px;
+    width: 350px;
+    left: 910px;
+    border-radius: 20px;
+    
+}
+
+footer div img{
+    width: 18px;
+    height: 18px;
+}

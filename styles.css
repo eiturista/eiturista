@@ -17,9 +17,11 @@ header div:nth-child(2){
 
 header > div{
   width: 50%;
+  height: 100%;
+  align-items: center;
 }
 
-header .logotipo{
+.logotipo{
   height: 45px;
 }
 
@@ -27,4 +29,20 @@ header input{
   border-radius: 25px;
   border: 0;
   height: 30px;
+  background-image: url(lupa.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  margin: 0 5px;
+}
+
+header > div > a{
+  height: 30px;
+}
+
+#icone_perfil{
+  margin: 5px;
+}
+
+#icone_carrinho{
+  margin: 5px;
 }

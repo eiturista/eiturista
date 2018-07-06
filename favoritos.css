@@ -3,7 +3,7 @@
     margin-top: 6vw;
     display: flex;
     justify-content: space-evenly;
-
+    
 }
 
 h2{
@@ -11,6 +11,7 @@ h2{
     margin-bottom: 50px;
     right: 400px;
     border-bottom: rgb(109, 91, 151) solid 1px;
+    font-family: 'Playfair Display', serif;
 }
 
 .maps{
@@ -35,7 +36,7 @@ h2{
     background: linear-gradient(to top, #cb60b3 0%,rgb(135, 105, 157) 49%,rgb(109, 91, 151) 100%); 
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
-
+    
     height: 400px;
     width: 350px;
     left: 910px;

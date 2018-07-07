@@ -4,16 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/server.js"
   },
+  "keywords": [],
   "author": "Isaias Mendes",
   "license": "ISC",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.3",
-    "crypto": "^1.0.1",
+    "debug": "^3.1.0",
     "express": "^4.16.3",
-    "express-mongo-db": "^2.0.4",
-    "mongoose": "^5.2.1"
+    "http": "0.0.0",
+    "normalize-port": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
   }
 }

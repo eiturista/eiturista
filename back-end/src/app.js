@@ -2,11 +2,18 @@
 
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const app = express();
 const router = express.Router();
 
-// carrega as Rotas
+// Conecta ao Banco
+mongoose.connect('mongodb://root:Ei!123@ds018558.mlab.com:18558/db_eiturismo');
+
+// Carrega os Models
+const User = require('./models/Users');
+
+// Carrega as Rotas
 const indexRoute = require('./routes/index');
 const userRoute  = require('./routes/user');
 
@@ -17,7 +24,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use('/', indexRoute);
-app.use('/', userRoute);
+app.use('/users', userRoute);
 
 
 module.exports = app;

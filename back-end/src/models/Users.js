@@ -22,11 +22,13 @@ const schema = new Schema({
 		unique: true
 	},
 	password: {
-		type: Number,
+		type: String,
 		require: true 
 	},
 	favoritos:[{
 		type: String
+		// type: mongoose.Schema.Types.ObjectID,
+		// ref: 'Lugares'
 	}],
 });
 

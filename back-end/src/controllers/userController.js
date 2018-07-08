@@ -2,10 +2,11 @@
 
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
+const md5 = require('md5');
 
 exports.get = (req,res,next) => {
 	User.
-		find({}, 'login name email favoritos')
+		find({}, 'login name email password favoritos')
 		.then(data => {
 			res.status(200).send(data);
 		})
@@ -52,7 +53,13 @@ exports.getByFavorito = (req,res,next) => {
 }
 
 exports.post = (req,res,next) => {
-	let user = new User(req.body);
+	let user = new User({
+		login: req.body.login,
+		name: req.body.name,
+		email: req.body.email,
+		password: md5(req.body.password + global.SALT_KEY),
+		favoritos: req.body.favoritos
+	});
 	user.save()
 		.then(x => {
 			res.status(201).send({ 
@@ -61,7 +68,7 @@ exports.post = (req,res,next) => {
 		})
 		.catch(e => {
 			res.status(400).send({ 
-				message: 'Falha ao cadastrar Turista', 
+				message: 'Falha ao cadastrar Turista!', 
 				data: e
 			});
 		}); 

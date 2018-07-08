@@ -13,6 +13,7 @@ footer{
 footer div{
     width: 100%;
     margin: 3px;
+    margin-bottom: 0x;
 }
 
 footer div:nth-child(1){
@@ -37,7 +38,7 @@ a{
     color: white;
 }
 
-p{
+footer p{
     margin: 0;
 }
 
@@ -68,7 +69,7 @@ footer div img{
     footer div:nth-child(1){
         width: 100%;
     }
-    footer{
-        width: 110%;
+    #logosinferioresfav{
+        width: 22vh;
     }
 }

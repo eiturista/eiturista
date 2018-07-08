@@ -56,7 +56,7 @@ header > div > a > img{
   header input{
     display: none;
   }
-  #icone_lupa{
+  /* #icone_lupa{
     display: flex;
-  }
+  } */
 }

@@ -3,7 +3,6 @@
     margin-top: 6vw;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 h2{
@@ -14,7 +13,7 @@ h2{
     font-family: 'Playfair Display', serif;
 }
 
-.maps{
+#mapsbig{
     position: absolute;
     left: 64px;
     width: 650px;
@@ -23,28 +22,80 @@ h2{
     overflow: hidden;
     margin-right: 50px;
 }
-.caixinha{
-    position: absolute;
+/* .mapssmall{
+    display:none;
+} */
+#icone_lupa{
+    width: 20px;
+    height: 29px;
 }
 
-#favorito div:nth-child(2){
-    
-    background: #cb60b3; 
-    /* Old browsers */
-    background: -moz-linear-gradient(bottom, rgb(109, 91, 151) 0%, rgb(135, 105, 157) 49%, #a80077 10   0%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(bottom, rgb(109, 91, 151) 0%,rgb(135, 105, 157) 49%,#a80077 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to top, #cb60b3 0%,rgb(135, 105, 157) 49%,rgb(109, 91, 151) 100%); 
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#db36a4',GradientType=0 ); /* IE6-9 */
-    
-    height: 400px;
-    width: 350px;
-    left: 910px;
+.caixinha h2{
+    color:white;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 30px;
+}
+
+.caixinha input{
     border-radius: 20px;
-    
+    border: 0;
+    width: 250px;
+    height: 25px;
+    background-image: url(img/lupa.png);
+    background-repeat: no-repeat;
+    background-position: 95%;
+}
+
+.caixinha{
+    background-color: #a77c9f; 
+    /* Old browsers */
+    background: -moz-linear-gradient(bottom, rgb(109, 91, 151) 0%, rgb(135, 105, 157) 49%, #a80077 10   0%);
+    background: -webkit-linear-gradient(bottom, rgb(109, 91, 151) 0%,rgb(135, 105, 157) 49%,#a80077 100%); 
+    /*Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, #a77c9f 0%,rgb(135, 105, 157) 49%,rgb(109, 91, 151) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a77c9f', endColorstr='#db36a4',GradientType=0 );
+    position: absolute;
+    text-align: center;
+    height: 445px;
+    width: 305px;
+    left: 910px;
+    border-radius: 20px; 
+}
+#quadrado {
+    background-color: white;
+    height: 310px;
+    width: 275px;
+    position: relative;
+    left: 16px;
+    top: -10px;
 }
 
 footer div img{
     width: 18px;
     height: 18px;
+}
+
+@media(max-width: 400px){
+    #mapsbig{
+        display:none;
+    }
+    .caixinha{
+        position: absolute;
+        left: 4vw;
+        height: 450px;
+
+    }
+    #quadrado{
+        height: 285px;
+    }
+    /* .mapssmall{
+        display:block;
+        position: absolute;
+        top: 100px;
+    }
+    .mapas{
+        position: absolute;
+        top:100px;
+    } */
+    
 }

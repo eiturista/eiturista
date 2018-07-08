@@ -7,6 +7,6 @@ const dbName = 'db_eiturismo';
 
 module.exports = {
 	connectionString: `mongodb://${user}:${pass}@ds018558.mlab.com:18558/${dbName}`,
-	sendgridKey: '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', 
+	sendgridKey: '', 
 	containerConnectionString: 'TBD' // armazenar imagens
 }

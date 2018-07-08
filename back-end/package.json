@@ -16,7 +16,8 @@
     "http": "0.0.0",
     "md5": "^2.2.1",
     "mongoose": "^5.2.1",
-    "normalize-port": "^1.0.0"
+    "normalize-port": "^1.0.0",
+    "sendgrid": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.5"

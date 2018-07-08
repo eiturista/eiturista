@@ -3,6 +3,7 @@
 const mongoose = require('mongoose');
 const User = mongoose.model('User');
 const md5 = require('md5');
+const emailService = require('../services/emailServices');
 
 exports.get = (req,res,next) => {
 	User.
@@ -52,7 +53,7 @@ exports.getByFavorito = (req,res,next) => {
 		}); 
 }
 
-exports.post = (req,res,next) => {
+exports.post = async (req,res,next) => {
 	let user = new User({
 		login: req.body.login,
 		name: req.body.name,
@@ -60,8 +61,12 @@ exports.post = (req,res,next) => {
 		password: md5(req.body.password + global.SALT_KEY),
 		favoritos: req.body.favoritos
 	});
-	user.save()
+	await user.save()
 		.then(x => {
+			// emailService.send(
+			// 	req.body.email, 
+			// 	'Bem vindo ao EiTurismo', 
+			// 	global.EMAIL_TMPL.replace('{0}', req.boby.name));
 			res.status(201).send({ 
 				message: 'Turista cadastrado com sucesso! Faça as malas!'
 			});

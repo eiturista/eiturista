@@ -38,6 +38,19 @@ exports.getById = (req,res,next) => {
 		}); 
 }
 
+exports.getByFavorito = (req,res,next) => {
+	User.
+		find({
+			favoritos: req.params.favorito
+		})
+		.then(data => {
+			res.status(200).send(data);
+		})
+		.catch(e => {
+			res.status(400).send(e);
+		}); 
+}
+
 exports.post = (req,res,next) => {
 	let user = new User(req.body);
 	user.save()
@@ -55,13 +68,39 @@ exports.post = (req,res,next) => {
 }
 
 exports.put = (req,res,next) => {
-	const id = req.params.id;
-	res.status(200).send({
-		id: id,
-		item: req.body
-	});
+	User.
+		findByIdAndUpdate(req.params.id, {
+			$set: {
+				login: req.body.login,
+				name: req.body.name,
+				email: req.body.email
+			}
+		})
+		.then(x => {
+			res.status(200).send({ 
+				message: 'Turista atualizado com Sucesso!'
+			});
+		})
+		.catch(e => {
+			res.status(400).send({ 
+				message: 'Falha ao atualizado Turista!', 
+				data: e
+			});
+		}); 
 }
 
 exports.delete = (req,res,next) => {
-	res.status(200).send(req.body); 
+	User.
+		findOneAndRemove({ _id: req.body.id})
+		.then(x => {
+			res.status(200).send({ 
+				message: 'Turista removido com Sucesso!'
+			});
+		})
+		.catch(e => {
+			res.status(400).send({ 
+				message: 'Falha ao remover Turista!', 
+				data: e
+			});
+		});
 }

@@ -5,9 +5,8 @@ footer{
     flex-direction: column;
     align-items: center;
     color: white;
-    bottom: 0;
-    position: absolute;
     text-align: center;
+    margin-top: 20px;
 }
 
 footer div{
@@ -20,12 +19,6 @@ footer div:nth-child(1){
     display: flex;
     justify-content: space-evenly;
     width: 60%;
-}
-
-footer div:nth-child(2){
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 footer div:nth-child(3){
@@ -46,6 +39,7 @@ footer div img{
     width: 18px;
     height: 18px;
 }
+
 #logosinferioresindex{
     display: flex;
     justify-content: center;
@@ -54,9 +48,8 @@ footer div img{
     margin-bottom: -14.5px;
     margin-right: 32px;
     width: 100vh;
-    
-    
 }
+
 #logosinferioresfav{
     display: flex;
     justify-content: center;

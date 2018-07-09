@@ -7,6 +7,8 @@ const config = require('./config/config');
 
 const app = express();
 app.set('view engine', 'ejs');
+app.use('/public', express.static('public'));
+// app.use(express.static(path.join(__dirname, '/public/')));
 const router = express.Router();
 
 // Conecta ao Banco
@@ -24,6 +26,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ 
 	extended: false 
 }));
+
 
 app.use('/', indexRoute);
 app.use('/users', userRoute);

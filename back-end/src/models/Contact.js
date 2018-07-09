@@ -16,7 +16,7 @@ const schema = new Schema({
 		type: String,
 		require: true 
 	},
-	messagem: {
+	mensagem: {
 		type: String,
 		require: true
 	},

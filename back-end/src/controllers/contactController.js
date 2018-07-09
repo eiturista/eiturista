@@ -18,7 +18,7 @@ exports.get = (req,res,next) => {
 
 exports.post = (req,res,next) => {
 	let contact = new Contact({
-		name: req.body.nome,
+		name: req.body.name,
 		email: req.body.email,
 		assunto: req.body.assunto,
 		mensagem: req.body.mensagem

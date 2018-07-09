@@ -1,0 +1,62 @@
+header{
+  width: 100%;
+  height: 45px;
+  background-color: rgb(109, 91, 151);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+}
+
+header div:nth-child(2){
+  display: flex;
+  justify-content: flex-end;
+}
+
+header > div{
+  width: 45%;
+  height: 100%;
+  align-items: center;
+}
+
+#logotipo{
+  height: 45px;
+  margin: 0;
+}
+
+header input{
+  border-radius: 25px;
+  border: 0;
+  height: 30px;
+  background-image: url(img/lupa.png);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  margin: 0 5px;
+}
+
+header > div > a{
+  height: 30px;
+}
+
+header > div > a > img{
+  height: 20px;
+  margin: 5px;
+}
+
+#icone_lupa{
+  display: none;
+}
+
+#espaço{
+  height: 45px;
+}
+
+@media(max-width: 400px){
+  header input{
+    display: none;
+  }
+  /* #icone_lupa{
+    display: flex;
+  } */
+}

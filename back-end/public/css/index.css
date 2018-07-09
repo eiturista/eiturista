@@ -1,0 +1,52 @@
+#primeira{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 80%;
+  margin: 0 10%;
+}
+
+#primeira > h1{
+  color: rgb(109, 91, 151);
+}
+
+#carrossel{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0;
+  text-align: center;
+}
+
+#carrossel > div > div{
+  border-radius: 100%;
+  border: 5px solid rgb(109, 91, 151);
+  background-image: url(../img/masp.jpg);
+  background-repeat: no-repeat;
+}
+
+#meio{
+  height: 200px;
+  width: 200px;
+}
+
+.lados{
+  height: 160px;
+  width: 160px;
+}
+
+@media(max-width: 400px){
+  #primeira{
+    width: 100%;
+    margin: 0 5%;
+  }
+}
+
+@media(max-width:600px){
+  .lados{
+    display: none;
+  }
+}

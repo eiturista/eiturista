@@ -10,4 +10,8 @@ router.get('/', (req, res, next) => {
 	});
 });
 
+router.get('/home', (req, res, next) => {
+	res.status(200).render('index.ejs');
+});
+
 module.exports = router;

@@ -6,6 +6,7 @@ const mongoose = require('mongoose');
 const config = require('./config/config');
 
 const app = express();
+app.set('view engine', 'ejs');
 const router = express.Router();
 
 // Conecta ao Banco

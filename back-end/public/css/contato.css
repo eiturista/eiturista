@@ -1,0 +1,56 @@
+body{
+
+}
+section{
+    margin-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    align-content: center;
+    background-color: rgba(109,91,151, 0.1);
+    text-align: center;
+    align-items: center;
+    /* width: 100vw; */
+}
+h1{
+    color:rgb(109,91,151);
+    font-family: 'Montserrat', sans-serif;  
+}
+#grande{
+    margin-top:50px;
+    margin-left: 10px;
+}
+#pequeno{
+    display:none;
+}
+
+input{
+    border-radius: 5px;
+}
+form p{
+    font-family: 'Montserrat', sans-serif;  
+    margin-bottom: -8px;
+    font-size: 15px;
+    color:rgb(109,91,151);
+}
+textarea{
+    border-radius: 5px;
+}
+button{
+    border-radius: 8px;
+    color:white;
+    background-color: rgb(109,91,151);
+    margin:0;
+    width: 90px;
+    height: 35px;
+    font-family: 'Playfair Display', serif;
+}
+
+@media(max-width: 400px){
+    #grande{
+        display:none;
+    }
+    #pequeno{
+        display: block;
+    }
+    
+}

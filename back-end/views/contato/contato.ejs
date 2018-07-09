@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/header.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <link rel="stylesheet" href="/public/css/favoritos.css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/contato.css">
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+    <title>Ei!Contato</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="/public/img/logotipo.jpeg" alt="Logotipo" id="logotipo"/>
+            </a>
+        </div>
+        <div>
+            <input type="text" name="pesquisa"/>
+            <a href="#">
+                <img src="/public/img/lupa.png" alt="" id="icone_lupa"/>
+            </a>
+            <a href="favoritos.html">
+                <img src="/public/img/bag-icon.png" alt="" id="icone_mala"/>
+            </a>
+            <a href="#">
+                <img src="/public/img/icone_perfil.png" alt="" id="icone_perfil"/>
+            </a>
+        </div>
+    </header>
+    <div id="espaço"></div>
+
+    <section>
+        <h2>
+        <% if (typeof(message) != "undefined"){ %>
+         <%= message %>
+            
+        <% } else { %>
+            
+        <% } %>
+        </h2>
+
+        
+        <h1>Ei! Vamos amar receber sua mensagem !</h1   >
+        <form id="grande" name="formulario" action="contato" method="post">
+            <p>Seu nome:</p><br>
+            <input type="text" name="nome" size="63"><br>
+            <p>Email:</p><br>
+            <input type="text" name="email" size="63"><br>
+            <p>Assunto:</p><br>
+            <input type="text" name="assunto" size="63"><br>
+            <p>Escreva aqui sua mensagem e responderemos o mais rápido possível:</p><br>
+            <textarea name="mensagem" rows="10" cols="65" wrap="virtual"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <form id="pequeno" name="formulario" action="contato" method="post">
+            <p>Seu nome:</p><br>
+            <input type="text" name="nome" size="40"></p><br>
+            <p>Email:</p><br>
+            <input type="text" name="email" size="40"></p><br>
+            <p>Assunto:</p><br>
+            <input type="text" name="assunto" size="40"><br>
+            <p>Escreva aqui sua mensagem e responderemos o mais rápido possível:</p><br>
+            <textarea type="text" name="mensagem" rows="10" cols="45" wrap="virtual"></textarea><br>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div>
+            <!-- <img src="img/logotipo.jpeg" alt=""> -->
+        </div>
+        
+    </section>
+    <footer>
+        <div>
+            <a href="equipe">Sobre Nós</a>
+            <a href="contato">Contato</a>
+            <a href="apoio">Apoie-nos</a>
+        </div>
+        <div id="logosinferioresfav">
+            <a href="http://fb.com" target="_blank">
+                <img src="/public/img/facebook-logo.png" alt="Facebook"/>
+            </a>
+            <a href="http://instagram.com/eiturista" target="_blank">
+                <img src="/public/img/instagram-logo.png" alt="Instagram"/>
+            </a>
+            <a href="http://twitter.com/eiturista" target="_blank">
+                <img src="/public/img/twitter-logo.png" alt="Twitter"/>
+            </a>
+        </div>
+        <div>
+            <p>@2018 - Ei!TuristaSquad Developers</p>
+        </div>
+    </footer>
+</body>
+</html>

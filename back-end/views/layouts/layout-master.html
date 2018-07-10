@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <link rel="shortcut icon" type="image/png" href='/public/img/favicon.png'/>
+   <link rel='stylesheet' type="text/css" media="screen" href='/public/css/styles.css' />
+   <link rel='stylesheet' href='/public/css/header.css' />
+   <link rel='stylesheet' href='/public/css/footer.css' />
+   <link rel='stylesheet' href='/public/css/index.css' />
+   {% block head %}{% endblock %}
+</head>
+<body>
+
+   <header>
+    <div>
+      <a href="/">
+        <img src="public/img/logotipo.jpeg" alt="Logotipo" id="logotipo"/>
+      </a>
+    </div>
+    <div>
+      <input type="text" name="pesquisa"/>
+      <a href="#">
+        <img src="public/img/lupa.png" alt="" id="icone_lupa"/>
+      </a>
+      <a href="/favoritos">
+        <img src="public/img/bag-icon.png" alt="" id="icone_mala"/>
+      </a>
+      <a href="#">
+        <img src="public/img/icone_perfil.png" alt="" id="icone_perfil"/>
+      </a>
+    </div>
+  </header>
+  <div id="espaço"></div>
+   
+   {% block conteudo %}{% endblock %}
+
+   <footer>
+      <div>
+         <a href="/equipe">Sobre Nós</a>
+         <a href="/contato">Contato</a>
+         <a href="/apoio">Apoie-nos</a>
+      </div>
+      <div id="logosinferioresindex">
+         <a href="http://fb.com" target="_blank">
+            <img src="/public/img/facebook-logo.png" alt="Facebook"/>
+         </a>
+         <a href="http://instagram.com/eiturista" target="_blank">
+            <img src="/public/img/instagram-logo.png" alt="Instagram"/>
+         </a>
+         <a href="http://twitter.com/eiturista" target="_blank">
+            <img src="/public/img/twitter-logo.png" alt="Twitter"/>
+         </a>
+      </div>
+      <div>
+         <p>@2018 - Ei!TuristaSquad Developers</p>
+      </div>
+   </footer>
+
+</body>
+</html>

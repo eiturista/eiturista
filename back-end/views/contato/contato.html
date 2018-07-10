@@ -1,0 +1,38 @@
+{% extends "layouts/layout-master.html" %}
+{% block head %}
+<link rel="stylesheet" href="public/css/contato.css">
+<title>Ei!Contato</title>  
+{% endblock %}
+  
+{% block conteudo %}
+<section>
+    <h1>Ei! Vamos amar receber sua mensagem !</h1   >
+    <form id="grande" name="formulario" action="" method="post">
+        <p>Seu nome:</p><br>
+        <input type=text name="nome" size="63"></p><br>
+        <p>Email:</p><br>
+        <input type=text name="email" size="63"></p><br>
+        <p>Assunto:</p><br>
+        <input type=text name="assunto" size="63"></p><br>
+        <p>Escreva aqui sua mensagem e responderemos o mais rápido possível:</p><br>
+        <textarea name="Mensagem" rows="10" cols="65" wrap="virtual"></textarea></p><br>
+        <button><a href="">Enviar</a></button>
+    </form>
+    <form id="pequeno" name="formulario" action="" method="post">
+        <p>Seu nome:</p><br>
+        <input type=text name="nome" size="40"></p><br>
+        <p>Email:</p><br>
+        <input type=text name="email" size="40"></p><br>
+        <p>Assunto:</p><br>
+        <input type=text name="assunto" size="40"></p><br>
+        <p>Escreva aqui sua mensagem e responderemos o mais rápido possível:</p><br>
+        <textarea name="Mensagem" rows="10" cols="45" wrap="virtual"></textarea></p><br>
+        <button><a href="">Enviar</a></button>
+    </form>
+
+    <div>
+        <!-- <img src="img/logotipo.jpeg" alt=""> -->
+    </div>
+</section>    
+
+{% endblock %}

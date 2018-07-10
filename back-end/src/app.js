@@ -4,13 +4,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const config = require('./config/config');
-const expressLayouts = require('express-ejs-layouts');
+const nunjucks = require('nunjucks');
+
 
 const app = express();
-app.engine('ejs', require('express-ejs-extend')); // add this line
-app.set('view engine', 'ejs');
+nunjucks.configure('views', {
+    autoescape: true,
+    express: app
+});
+app.set('view engine', 'njk');
 app.use('/public', express.static('public'));
-// app.use(express.static(path.join(__dirname, '/public/')));
+
 const router = express.Router();
 
 // Conecta ao Banco

@@ -11,20 +11,20 @@ router.get('/teste', (req, res, next) => {
 });
 
 router.get('/', (req, res, next) => {
-	res.status(200).render('index.ejs', {title: 'Ei!Turista'});
+	res.status(200).render('index.html', {title: 'Ei!Turista'});
 });
 
 router.get('/apoio', (req, res, next) => {
-	res.status(200).render('apoio/apoio.ejs');
+	res.status(200).render('apoio/apoio.html');
 });
 
 
 router.get('/equipe', (req, res, next) => {
-	res.status(200).render('equipe/equipe.ejs');
+	res.status(200).render('equipe/equipe.html');
 });
 
 router.get('/favoritos', (req, res, next) => {
-	res.status(200).render('favoritos/favoritos.ejs');
+	res.status(200).render('favoritos/favoritos.html');
 });
 
 module.exports = router;

@@ -25,12 +25,12 @@ exports.post = (req,res,next) => {
 	});
 	 contact.save()
 		.then(x => {
-			res.status(201).render('contato/contato.ejs', {
+			res.status(201).render('contato/contato.html', {
 				message: 'Mensagem enviada com sucesso!'
 			});
 		})
 		.catch(e => {
-			res.status(400).render('contato/contato.ejs', {
+			res.status(400).render('contato/contato.html', {
 				message: 'Erro ao enviar mensagem!'
 				// data: e
 			});

@@ -1,15 +1,24 @@
+body{
+  
+    overflow-y: hidden;
+}
 
 section{
     display: flex;
     background-color: rgb(247,247,247);
     margin-left: 15px;
+    margin-bottom: -145px;
 }
 .formulario{
-    margin-top: 30px;
+    margin-top: 0;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
-    text-align: left;;
+    text-align: left;
+    margin-bottom: 120px;
+}
+section div form input{
+    height: 20px;
 }
 .logoformulario{
     align-items: center;
@@ -25,15 +34,18 @@ section{
     top: 200px;
 }
 
-h1{
+.formulario h2{
     color:rgb(109,91,151);
     font-family: 'Montserrat', sans-serif;  
+    margin-bottom: 3px;
+    font-size: 17pt;
+    border-bottom: none;
 }
-#grande{
-    margin-top:50px;
+.formulario{
+    margin-top:0;
     margin-left: 10px;
 }
-#pequeno{
+.formulario2{
     display:none;
 }
 
@@ -45,6 +57,7 @@ form p{
     margin-bottom: -8px;
     font-size: 15px;
     color:rgb(109,91,151);
+    margin-top:5px;
 }
 textarea{
     border-radius: 5px;
@@ -57,14 +70,38 @@ button{
     width: 90px;
     height: 35px;
     font-family: 'Playfair Display', serif;
+    
 }
 
 @media(max-width: 400px){
-    #grande{
+    .formulario{
+        display:none;
+        margin:0;
+    }
+    .formulario2{
+        display: block;
+        /* text-align: left; */
+        margin-left:3%;
+        flex-direction: row;
+
+    }  
+    .logoformulario{
         display:none;
     }
-    #pequeno{
-        display: block;
+    section{
+        margin-bottom: 10px;
+        line-height: 112%;
     }
-    
+    .formulario2 h2{
+        font-size:17pt;
+        border-bottom: none;
+        text-align: center;
+    }
+    form p{
+        text-align: center;
+    }
+    body{
+        overflow-y: auto;
+        overflow-x:hidden;
+    }
 }

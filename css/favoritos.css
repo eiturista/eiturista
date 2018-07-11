@@ -26,48 +26,54 @@ h2{
 #icone_lupa{
     width: 20px;
     height: 29px;
+    display: block;
 }
 
-.caixinha h2{
+.box h2{
     color:white;
     font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
 }
 
-.caixinha input{
-    border-radius: 20px;
+.box input{
+    border-radius: 25px;
     border: 0;
-    width: 250px;
-    height: 25px;
-    background-image: url(img/lupa.png);
+    height: 30px;
+    width: 200px;
+    background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
     background-position: 95%;
+    margin: 0 5px;
 }
 
-.caixinha{
+.box{
     background-color: #a77c9f; 
     /* Old browsers */
     background: -moz-linear-gradient(bottom, rgb(109, 91, 151) 0%, rgb(135, 105, 157) 49%, #a80077 10   0%);
     background: -webkit-linear-gradient(bottom, rgb(109, 91, 151) 0%,rgb(135, 105, 157) 49%,#a80077 100%); 
     /*Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to top, #a77c9f 0%,rgb(135, 105, 157) 49%,rgb(109, 91, 151) 100%); 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a77c9f', endColorstr='#db36a4',GradientType=0 );
+    
     position: absolute;
     text-align: center;
     height: 445px;
-    width: 22.5vw;
+    width: 19.5vw;
     left: 910px;
     border-radius: 20px; 
+    z-index: -1;
 }
-#quadrado {
-    background-color: white;
-    background-image: url(img/backgroundfav.png);
-    background-size: cover;
-    height: 310px;
-    width: 20.2vw;
-    position: relative;
-    left: 16px;
-    top: -10px;
+.box:nth-child(1){
+    display:flex;   
+    flex-direction: row;
+}
+#quadrado img{
+    height: 44.5vh;
+    width: auto;
+    position: absolute;
+    left: 18px;
+    border-radius: 2px;
+    width: 17vw;
+    bottom: 15px;
 }
 
 footer div img{
@@ -79,7 +85,7 @@ footer div img{
     #mapsbig{
         display:none;
     }
-    .caixinha{
+    .box{
         position: absolute;
         left: 4vw;
         height: 450px;
@@ -90,5 +96,5 @@ footer div img{
         height: 285px;
         width: 81.6vw;  
     }
-
+    
 }

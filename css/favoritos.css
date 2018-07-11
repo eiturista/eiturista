@@ -18,13 +18,11 @@ h2{
     left: 64px;
     width: 650px;
     height: 300px;
-    border-radius: 5%;
+    border-radius: 1%;
     overflow: hidden;
     margin-right: 50px;
 }
-/* .mapssmall{
-    display:none;
-} */
+
 #icone_lupa{
     width: 20px;
     height: 29px;
@@ -57,14 +55,16 @@ h2{
     position: absolute;
     text-align: center;
     height: 445px;
-    width: 305px;
+    width: 22.5vw;
     left: 910px;
     border-radius: 20px; 
 }
 #quadrado {
     background-color: white;
+    background-image: url(img/backgroundfav.png);
+    background-size: cover;
     height: 310px;
-    width: 275px;
+    width: 20.2vw;
     position: relative;
     left: 16px;
     top: -10px;
@@ -83,19 +83,12 @@ footer div img{
         position: absolute;
         left: 4vw;
         height: 450px;
+        width: 91vw;
 
     }
     #quadrado{
         height: 285px;
+        width: 81.6vw;  
     }
-    /* .mapssmall{
-        display:block;
-        position: absolute;
-        top: 100px;
-    }
-    .mapas{
-        position: absolute;
-        top:100px;
-    } */
-    
+
 }

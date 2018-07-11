@@ -8,7 +8,19 @@ footer{
     text-align: center;
     margin-top: 20px;
 }
+#footerfav{
+    width: 100%;
+    background-color: rgb(109, 91, 151);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
 
+}
 footer div{
     width: 100%;
     margin: 3px;

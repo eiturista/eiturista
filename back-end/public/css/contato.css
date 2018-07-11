@@ -4,17 +4,17 @@ body{
 section{
     margin-top: 30px;
     padding-bottom: 30px;
-    display: block;
-    align-content: center;
+    display: flex;
+    align-content: left;
     background-color: rgba(109,91,151, 0.1);
     text-align: center;
-    align-items: center;
+    align-items: left;
     /* width: 100vw; */
 }
 h1{
     color:rgb(109,91,151);
     font-family: 'Montserrat', sans-serif;  
-}
+}   
 #grande{
     margin-top:50px;
     margin-left: 10px;

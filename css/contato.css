@@ -1,16 +1,30 @@
-body{
 
-}
 section{
+    display: flex;
+    background-color: rgb(247,247,247);
+    margin-left: 15px;
+}
+.formulario{
     margin-top: 30px;
     padding-bottom: 30px;
-    display: block;
-    align-content: center;
-    background-color: rgba(109,91,151, 0.1);
-    text-align: center;
-    align-items: center;
-    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;;
 }
+.logoformulario{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 65vw
+
+}
+.logoformulario img{
+    width: 500px;
+    position: absolute;
+    left: 700px;
+    top: 200px;
+}
+
 h1{
     color:rgb(109,91,151);
     font-family: 'Montserrat', sans-serif;  

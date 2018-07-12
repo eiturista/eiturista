@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/favoritos.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/logincadastro.css">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
     <title>Ei!Favoritos</title>
 </head>
@@ -20,7 +21,7 @@
             </a>
         </div>
         <div>
-            <input type="text" name="pesquisa"/>
+            <input type="text" id="inputfav" name="pesquisa"/>
             <a href="#">
                 <img src="img/lupa.png" alt="" id="icone_lupa"/>
             </a>
@@ -30,47 +31,54 @@
             <a href="#">
                 <img src="img/icone_perfil.png" alt="" id="icone_perfil"/>
             </a>
-        </div>
-    </header>
-    <div id="espaço"></div>
-    <section id="favorito">
-        <div class="mapas">
-            <h2>Meu Mapa</h2>
-            <span id="mapsbig"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2427801356976!2d-46.65542056276937!3d-23.55972245769335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu+de+Arte+de+S%C3%A3o+Paulo+Assis+Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1530822042836" width="650" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span>
-        </div> 
-        
-        <div class="box">
-            <div>
-                <h2>Meus Lugares</h2>      
-                <input type="text" name="pesquisa"/>
-            </div> 
-            <div id="quadrado">
-                    <h1></h1>
-                <img src="img/backmasp.png" alt="">
-                
+            <div id="usuario">
+                <img src="img/logotransparente.png" alt="">
+                <ul>
+                    <ol> <button>Log In</button></ol>
+                    <ol class="space"></ol>
+                    <ol> <button>Cadastro</button></ol>
+                </ul>
             </div>
-        </div>
-    </section>
-    <footer id="footerfav">
-        <div>
-            <a href="equipe.html">Sobre Nós</a>
-            <a href="contato.html">Contato</a>
-            <a href="apoio.html">Apoie-nos</a>
-        </div>
-        <div id="logosinferioresfav">
-            <a href="http://fb.com" target="_blank">
-                <img src="img/facebook-logo.png" alt="Facebook"/>
-            </a>
-            <a href="http://instagram.com/eiturista" target="_blank">
-                <img src="img/instagram-logo.png" alt="Instagram"/>
-            </a>
-            <a href="http://twitter.com/eiturista" target="_blank">
-                <img src="img/twitter-logo.png" alt="Twitter"/>
-            </a>
-        </div>
-        <div>
-            <p>@2018 - Ei!TuristaSquad Developers</p>
-        </div>
-    </footer>
-</body>
-</html>
+        </header>
+        <div id="espaço"></div>
+        <section id="favorito">
+            <div class="mapas">
+                <h2>Meu Mapa</h2>
+                <span id="mapsbig"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2427801356976!2d-46.65542056276937!3d-23.55972245769335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59ceb1eb771f%3A0xe904f6a669744da1!2sMuseu+de+Arte+de+S%C3%A3o+Paulo+Assis+Chateaubriand!5e0!3m2!1spt-BR!2sbr!4v1530822042836" width="650" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span>
+            </div> 
+            
+            <div class="box">
+                <div>
+                    <h2>Meus Lugares</h2>      
+                    <input type="text" name="pesquisa"/>
+                </div> 
+                <div id="quadrado">
+                    <h1></h1>
+                    <img src="img/backmasp.png" alt="">
+                    
+                </div>
+            </div>
+        </section>
+        <footer id="footerfav">
+            <div>
+                <a href="equipe.html">Sobre Nós</a>
+                <a href="contato.html">Contato</a>
+                <a href="apoio.html">Apoie-nos</a>
+            </div>
+            <div id="logosinferioresfav">
+                <a href="http://fb.com" target="_blank">
+                    <img src="img/facebook-logo.png" alt="Facebook"/>
+                </a>
+                <a href="http://instagram.com/eiturista" target="_blank">
+                    <img src="img/instagram-logo.png" alt="Instagram"/>
+                </a>
+                <a href="http://twitter.com/eiturista" target="_blank">
+                    <img src="img/twitter-logo.png" alt="Twitter"/>
+                </a>
+            </div>
+            <div>
+                <p>@2018 - Ei!TuristaSquad Developers</p>
+            </div>
+        </footer>
+    </body>
+    </html>

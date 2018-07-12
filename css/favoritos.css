@@ -27,6 +27,7 @@ h2{
     width: 20px;
     height: 29px;
     display: block;
+    cursor: pointer;
 }
 
 .box h2{
@@ -44,6 +45,7 @@ h2{
     background-repeat: no-repeat;
     background-position: 95%;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .box{

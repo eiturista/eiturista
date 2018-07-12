@@ -8,6 +8,9 @@ header{
   top: 0;
   justify-content: center;
 }
+input{
+  cursor: pointer;
+}
 
 header div:nth-child(2){
   display: flex;
@@ -52,29 +55,7 @@ header > div > a > img{
   height: 45px;
 }
 
-#usuario{
-  width: 16vw;
-  height: 38vh;
-  padding-top:10px;
-  background-color: blue;
-  position: absolute;
-  top:8vh;
-  left:78vw;
-  border-radius: 20px;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#usuario img{
-  width: 10vw;
-  padding-left: 40px;
-}
-#usuario button{
-  background:none;  
-  border: white 1px solid;
-  border-radius: 30%;
-}
-
+    
 @media(max-width: 400px){
   header input{
     display: none;

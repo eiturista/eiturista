@@ -57,6 +57,7 @@
   #login input{
     background: none;
     border: 2px white solid;
+    border-radius: 10px;
     margin-right: 6vw;
     width:14vw;
     color:white;
@@ -91,3 +92,60 @@
   }
   
   /* TELA CADASTRO */
+  #cadastro{
+    width: 16vw;
+    height: 44vh;
+    padding-top:10px;
+    background: linear-gradient(#6d5b97, #a1789e);
+    position: absolute;
+    top:8vh;
+    left:78vw;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  #cadastro h2{
+    width: 10vw;
+    color:white;
+    border-bottom: 1px solid white;
+  }
+  #cadastro input{
+    background: none;
+    border: 2px white solid;
+    border-radius: 10px;
+    margin-right: 6vw;
+    width:14vw;
+    color:white;
+    text-align: center;
+    font-size: 10pt;
+  }
+  #cadastro input::placeholder{
+      color:white;
+      text-align: center;
+      font-size: 10 pt;
+  }
+  #cadastro button{
+    background:white;
+    color: #6d5b97;
+    font-size: 13pt;
+    border:none;
+    border-radius: 20px;
+    margin-right: 5.5vw;
+    cursor: pointer;
+    justify-content: center; 
+    width: 14vw;
+    height: 5vh;
+    align-items: center;
+  }
+  .opcoes{
+    text-align: left;
+    color:black;
+    font-size:9pt;
+    margin-left: 1.5vw;
+    margin-top: 5px;
+}
+#cadastro a{
+    color: black;
+}

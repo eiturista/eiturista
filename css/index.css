@@ -24,27 +24,67 @@
 #carrossel > div > div{
   border-radius: 100%;
   border: 5px solid rgb(109, 91, 151);
-  background-image: url(../img/masp.jpg);
-  background-repeat: no-repeat;
+  cursor: pointer;
 }
+
 
 #meio div{
   height: 200px;
   width: 200px;
+  background-image: url(../img/iconesp.png);
+  background-size: cover;
 }
 
-.lados div{
+.lado1 div{
   height: 160px;
   width: 160px;
+  background-image: url(../img/iconecwb.png);
+  background-size: cover;
+}
+.lado2 div{
+  height: 160px;
+  width: 160px;
+  background-image: url(../img/iconerj.png);
+  background-size: cover;
 }
 
-#tipos-lugares{
+#subtemas{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   flex-wrap: wrap;
 }
-
+#subtemas div{
+  border-radius: 10px;
+  width: 200px;
+  height: 350px;
+  background-color:black;
+}
+#subtemas div:nth-child(1){
+  background-image: url(../img/iconegastronomia.png);
+  background-size: cover;
+  cursor: pointer;
+}
+#subtemas div:nth-child(2){
+  background-image: url(../img/iconecultura.png);
+  background-size: cover;
+  cursor: pointer;
+}
+#subtemas div:nth-child(3){
+  background-image: url(../img/iconeaoarlivre.png);
+  background-size: cover;
+  cursor: pointer;
+}
+#subtemas div:nth-child(4){
+  background-image: url(../img/iconebalada.png);
+  background-size: cover;
+  cursor: pointer;
+}
+#subtemas div:nth-child(5){
+  background-image: url(../img/iconebar.png);
+  background-size: cover;
+   cursor: pointer;
+}
 @media(max-width: 400px){
   #primeira{
     width: 100%;
@@ -53,7 +93,7 @@
 }
 
 @media(max-width:600px){
-  .lados{
+  .esquerda{
     display: none;
   }
 }

@@ -68,14 +68,14 @@ h2{
     display:flex;   
     flex-direction: row;
 }
-#quadrado img{
-    height: 44.5vh;
-    width: auto;
-    position: absolute;
-    left: 18px;
-    border-radius: 2px;
-    width: 17vw;
-    bottom: 15px;
+
+#quadrado{
+    background-image: url(../img/masplegal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer div img{
@@ -83,20 +83,22 @@ footer div img{
     height: 18px;
 }
 
-@media(max-width: 400px){
+@media screen and (max-width: 400px){
     #mapsbig{
         display:none;
     }
     .box{
         position: absolute;
         left: 4vw;
-        height: 450px;
+        height: 70%;
         width: 91vw;
 
     }
     #quadrado{
-        height: 285px;
-        width: 81.6vw;  
+        height: 60%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+        border-radius: 10px;
     }
-    
 }

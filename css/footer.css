@@ -70,7 +70,7 @@ footer div img{
     width: 100vh;
     
 }
-@media(max-width: 400px){
+@media(max-width: 425px){
     footer div:nth-child(1){
         width: 100%;
     }

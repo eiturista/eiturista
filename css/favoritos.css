@@ -1,5 +1,4 @@
 #favorito{
-    margin-left: -1000px;
     margin-top: 6vw;
     display: flex;
     justify-content: space-evenly;
@@ -8,14 +7,11 @@
 h2{
     color:rgb(109,91,151);
     margin-bottom: 50px;
-    right: 400px;
     border-bottom: rgb(109, 91, 151) solid 1px;
     font-family: 'Playfair Display', serif;
 }
 
 #mapsbig{
-    position: absolute;
-    left: 64px;
     width: 650px;
     height: 300px;
     border-radius: 1%;
@@ -23,12 +19,6 @@ h2{
     margin-right: 50px;
 }
 
-#icone_lupa{
-    width: 20px;
-    height: 29px;
-    display: block;
-    cursor: pointer;
-}
 
 .box h2{
     color:white;
@@ -40,7 +30,7 @@ h2{
     border-radius: 25px;
     border: 0;
     height: 30px;
-    width: 200px;
+    width: 75%;
     background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
     background-position: 95%;
@@ -56,17 +46,9 @@ h2{
     /*Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to top, #a77c9f 0%,rgb(135, 105, 157) 49%,rgb(109, 91, 151) 100%); 
     
-    position: absolute;
     text-align: center;
-    height: 445px;
     width: 19.5vw;
-    left: 910px;
-    border-radius: 20px; 
-    z-index: -1;
-}
-.box:nth-child(1){
-    display:flex;   
-    flex-direction: row;
+    border-radius: 20px;
 }
 
 #quadrado{
@@ -76,6 +58,8 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 65%;
+    margin: 10px;
 }
 
 footer div img{
@@ -83,22 +67,36 @@ footer div img{
     height: 18px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
     #mapsbig{
         display:none;
     }
-    .box{
-        position: absolute;
-        left: 4vw;
-        height: 70%;
-        width: 91vw;
-
+    
+    #h2mapa{
+        display: none;
     }
+    
+    #favorito{
+        justify-content: center;
+    }
+
+    .box{
+        width: 70%;
+        height: 380px;
+        margin-top: 15%;
+    }
+
     #quadrado{
         height: 60%;
         width: 80%;
         margin-left: 10%;
         margin-top: 20px;
         border-radius: 10px;
+    }
+}
+
+@media (max-width:340px){
+    .box{
+        margin: 5%;
     }
 }

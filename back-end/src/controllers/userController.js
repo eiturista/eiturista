@@ -63,10 +63,12 @@ exports.post = async (req,res,next) => {
 	});
 	await user.save()
 		.then(x => {
-			// emailService.send(
-			// 	req.body.email, 
-			// 	'Bem vindo ao EiTurismo', 
-			// 	global.EMAIL_TMPL.replace('{0}', req.boby.name));
+			emailService.send(
+				req.body.email, 
+				'Bem vindo ao EiTurismo', 
+				global.EMAIL_TMPL.replace('{0}', req.body.name)
+			);
+
 			res.status(201).send({ 
 				message: 'Turista cadastrado com sucesso! Faça as malas!'
 			});

@@ -1,12 +1,13 @@
 'use strict';
 
-let config = ('../config/config');
+let config = require('../config/config.js');
 let sendgrid = require('sendgrid')(config.sendgridKey);
 
 exports.send = async (to, subject, body) => {
 	sendgrid.send({
 		to: to,
-		subject: 'eiturismocontato@gmail.com',
-		body: body
+		from: 'eituristacontato@gmail.com',
+		subject: subject, 
+		html: body
 	});
 }

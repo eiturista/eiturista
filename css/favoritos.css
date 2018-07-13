@@ -58,8 +58,11 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65%;
-    margin: 10px;
+    height: 64%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 footer div img{
@@ -88,10 +91,6 @@ footer div img{
 
     #quadrado{
         height: 60%;
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 20px;
-        border-radius: 10px;
     }
 }
 

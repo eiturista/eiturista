@@ -85,6 +85,28 @@
   background-size: cover;
    cursor: pointer;
 }
+/* DESTINOS */
+
+#destinos{
+  display:flex;
+  flex-direction: column;
+  margin-top:80px;
+}
+#destinos div{
+  align-items: center;
+  width: 100vw;
+  height: 25vh;
+}
+#destinos div:nth-child(1){
+  background-color: red;
+}
+#destinos div:nth-child(2){
+  background-color: blue;
+}
+#destinos div:nth-child(3){
+  background-color: green;
+}
+
 @media(max-width: 400px){
   #primeira{
     width: 100%;

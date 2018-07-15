@@ -9,8 +9,15 @@
 
 #primeira > h1{
   color: rgb(109, 91, 151);
+  font-size:36pt;
+  margin-bottom: 0;
+  font-family: sans-serif;
 }
-
+#primeira p{
+  font-size:18pt;
+  margin-bottom: 100px;
+  font-family: 'Merienda', cursive;   
+}
 #carrossel{
   height: 250px;
   width: 100%;
@@ -19,6 +26,7 @@
   justify-content: space-evenly;
   margin: 10px 0;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 #carrossel > div > div{
@@ -26,13 +34,19 @@
   border: 5px solid rgb(109, 91, 151);
   cursor: pointer;
 }
+#carrossel p{
+  font-family: 'Merienda', cursive;
+}
 
 
-#meio div{
+.sp{
   height: 200px;
   width: 200px;
   background-image: url(../img/iconesp.png);
   background-size: cover;
+  border-radius: 100%;
+  border: 5px solid rgb(109, 91, 151);
+  cursor: pointer;
 }
 
 .lado1 div{
@@ -47,12 +61,12 @@
   background-image: url(../img/iconerj.png);
   background-size: cover;
 }
-
+/* CRIAR ESTRUTURA SUBTEMAS */
 #subtemas{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 }
 #subtemas div{
   border-radius: 10px;
@@ -60,6 +74,7 @@
   height: 350px;
   background-color:black;
 }
+/* ADICIONAR AS IMAGENS */
 #subtemas div:nth-child(1){
   background-image: url(../img/iconegastronomia.png);
   background-size: cover;
@@ -85,28 +100,90 @@
   background-size: cover;
    cursor: pointer;
 }
-/* DESTINOS */
+/* ADICIONAR O NOME DOS SUBTEMAS */
 
+/* DESTINOS */
+/* ESTRUTURA */
 #destinos{
   display:flex;
   flex-direction: column;
   margin-top:80px;
 }
-#destinos div{
+#destinos .linha1{
   align-items: center;
+  display:flex;
   width: 100vw;
-  height: 25vh;
+  height: 30vh;
+  justify-content: space-around;
 }
-#destinos div:nth-child(1){
-  background-color: red;
-}
-#destinos div:nth-child(2){
-  background-color: blue;
-}
-#destinos div:nth-child(3){
-  background-color: green;
+#destinos .linha2{
+  align-items: center;
+  display:flex;
+  width: 100vw;
+  height: 30vh;
+  justify-content: space-around;
+}#destinos .linha3{
+  align-items: center;
+  display:flex;
+  width: 100vw;
+  height: 30vh;
+  justify-content: space-around;
 }
 
+#destinos .linha1 div{
+  width: 160px;
+  height: 160px;
+  border-radius: 20%;
+}
+#destinos .linha2 div{
+  width: 160px;
+  height: 160px;
+  border-radius: 20%;
+}
+#destinos .linha3 div{
+  width: 160px;
+  height: 160px;
+  border-radius: 20%;
+}
+/* DEFINICAO DOS DESTINOS LINHA 1 */
+#destinos .linha1 div:nth-child(1){
+  background-image: url(../img/japanhouse.png);
+  background-size: cover;
+}
+#destinos .linha1 div:nth-child(2){
+  background-image: url(../img/casa-das-rosas.png);
+  background-size: cover;
+}
+#destinos .linha1 div:nth-child(3){
+  background-image: url(../img/masp.jpg);
+  background-size: cover;
+}
+/* DEFINICAO DOS DESTINOS LINHA 2 */
+#destinos .linha2 div:nth-child(1){
+  background-image: url(../img/pinacoteca.jpg); 
+  background-size: cover;
+}
+#destinos .linha2 div:nth-child(2){
+  background-image: url(../img/luz.png);
+  background-size: cover;
+}
+#destinos .linha2 div:nth-child(3){
+  background-image: url(../img/glrdorock.png);
+  background-size: cover;
+}
+/* DEFINICAO DOS DESTINOS LINHA 3 */
+#destinos .linha3 div:nth-child(1){
+  background-image: url(../img/pacaembu.png); 
+  background-size: cover;
+}
+#destinos .linha3 div:nth-child(2){
+  background-image: url(../img/mac.png);
+  background-size: cover;
+}
+#destinos .linha3 div:nth-child(3){
+  background-image: url(../img/luz.png);
+  background-size: cover;
+}
 @media(max-width: 400px){
   #primeira{
     width: 100%;

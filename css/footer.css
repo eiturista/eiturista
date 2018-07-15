@@ -70,6 +70,13 @@ footer div img{
     width: 100vh;
     
 }
+
+footer .links a:hover{
+  text-decoration: underline;
+}
+footer #logosinferioresindex img:hover{
+    transform: scale(1.1);
+}
 @media(max-width: 425px){
     footer div:nth-child(1){
         width: 100%;

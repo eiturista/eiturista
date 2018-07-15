@@ -35,7 +35,9 @@ h2{
     background-repeat: no-repeat;
     background-position: 95%;
     margin: 0 5px;
-    cursor: pointer;
+    cursor: context-menu;
+    color: rgb(82, 64, 119);
+    text-align: center;
 }
 
 .box{

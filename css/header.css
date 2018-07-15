@@ -8,9 +8,6 @@ header{
   top: 0;
   justify-content: center;
 }
-input{
-  cursor: pointer;
-}
 
 header div:nth-child(2){
   display: flex;
@@ -36,6 +33,9 @@ header input{
   background-repeat: no-repeat;
   background-position: 95%;
   margin: 0 5px;
+  cursor: context-menu;
+  color: rgb(82, 64, 119);
+  text-align: center;
 }
 
 header > div > a{

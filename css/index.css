@@ -174,7 +174,10 @@
   justify-content: center;
   margin-bottom: 1px;
 }
-
+#destinos a{
+  color:blue;
+  font-size: 10pt;
+}
 /* ESTILIZANDO BOTOES */
 #destinos button{
   margin-bottom: 10px;
@@ -225,8 +228,6 @@
 #destinos #linha1 .masp{
   display:flex;
   flex-direction:column;
-}
-
 }
 /* DEFINICAO DOS DESTINOS LINHA 2 */
 #destinos #linha2 .pina div{

@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 80%;
-  margin: 0 10%;
+  width: 99%;
 }
 
 #primeira > h1{
@@ -12,19 +11,33 @@
   font-size:36pt;
   margin-bottom: 0;
   font-family: sans-serif;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#primeira h3{
+  font-size:18pt;
+  color: rgb(109, 91, 151);
+  margin-bottom: 10px;
+  font-family: sans-serif; 
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 #primeira p{
-  font-size:18pt;
+  font-size:15pt;
   margin-bottom: 100px;
   font-family: 'Merienda', cursive;   
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 #carrossel{
   height: 250px;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin: 10px 0;
+  justify-content: space-evenly;  
   text-align: center;
   margin-bottom: 150px;
 }
@@ -48,7 +61,10 @@
   border: 5px solid rgb(109, 91, 151);
   cursor: pointer;
 }
-
+#carrossel div:hover{
+  filter: grayscale(50%);
+  transition: 0.5s;
+}
 .lado1 div{
   height: 160px;
   width: 160px;
@@ -66,123 +82,207 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  flex-wrap: wrap;  
 }
 #subtemas div{
   border-radius: 10px;
   width: 200px;
   height: 350px;
-  background-color:black;
+}
+#subtemas p{
+  font-family: 'Merienda', cursive;   
+}
+#subtemas div:hover{
+  transform: scale(1.1);
 }
 /* ADICIONAR AS IMAGENS */
-#subtemas div:nth-child(1){
+#subtemas .gastronomia{
   background-image: url(../img/iconegastronomia.png);
   background-size: cover;
   cursor: pointer;
+  text-align: center;
 }
-#subtemas div:nth-child(2){
+#subtemas .cultura{
   background-image: url(../img/iconecultura.png);
   background-size: cover;
   cursor: pointer;
+  text-align: center;
 }
-#subtemas div:nth-child(3){
+#subtemas .arlivre{
   background-image: url(../img/iconeaoarlivre.png);
   background-size: cover;
   cursor: pointer;
+  text-align: center;
 }
-#subtemas div:nth-child(4){
+#subtemas .balada{
   background-image: url(../img/iconebalada.png);
   background-size: cover;
   cursor: pointer;
+  text-align: center;
 }
-#subtemas div:nth-child(5){
+#subtemas .bares{
   background-image: url(../img/iconebar.png);
   background-size: cover;
    cursor: pointer;
+   text-align: center;
 }
-/* ADICIONAR O NOME DOS SUBTEMAS */
 
 /* DESTINOS */
 /* ESTRUTURA */
 #destinos{
   display:flex;
   flex-direction: column;
-  margin-top:80px;
+  margin-top:160px;
 }
-#destinos .linha1{
+#destinos #linha1{
   align-items: center;
   display:flex;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   justify-content: space-around;
 }
-#destinos .linha2{
+#destinos #linha2{
   align-items: center;
   display:flex;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   justify-content: space-around;
-}#destinos .linha3{
+}#destinos #linha3{
   align-items: center;
   display:flex;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   justify-content: space-around;
 }
 
-#destinos .linha1 div{
+#destinos #linha1 div{
   width: 160px;
-  height: 160px;
+  height: 250px;
   border-radius: 20%;
 }
-#destinos .linha2 div{
+#destinos #linha2 div{
   width: 160px;
-  height: 160px;
+  height: 250px;
   border-radius: 20%;
 }
-#destinos .linha3 div{
+#destinos #linha3 div{
   width: 160px;
-  height: 160px;
+  height: 250px;
   border-radius: 20%;
 }
+#destinos p{
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1px;
+}
+
+/* ESTILIZANDO BOTOES */
+#destinos button{
+  margin-bottom: 10px;
+  width: 12vw;
+  height: 5vh;
+  background-color: rgb(109, 91, 151);
+  color:white;
+  border:none;
+  cursor:pointer;
+  justify-content: center;
+  border-radius: 5px;
+}
+#destinos button:hover{
+  background-color: rgb(82, 64, 119);
+}
+#destinos button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transform: translateX(-4px);
+}
+
 /* DEFINICAO DOS DESTINOS LINHA 1 */
-#destinos .linha1 div:nth-child(1){
+#destinos #linha1 .japan div{
   background-image: url(../img/japanhouse.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
 }
-#destinos .linha1 div:nth-child(2){
+#destinos #linha1 .japan{
+  display:flex;
+  flex-direction:column;
+}
+
+#destinos #linha1 .rosas div{
   background-image: url(../img/casa-das-rosas.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
 }
-#destinos .linha1 div:nth-child(3){
-  background-image: url(../img/masp.jpg);
+#destinos #linha1 .rosas{
+  display:flex;
+  flex-direction:column;
+}
+#destinos #linha1 .masp div{
+  background-image: url(../img/masp.jpg );
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
+}
+#destinos #linha1 .masp{
+  display:flex;
+  flex-direction:column;
+}
+
 }
 /* DEFINICAO DOS DESTINOS LINHA 2 */
-#destinos .linha2 div:nth-child(1){
-  background-image: url(../img/pinacoteca.jpg); 
+#destinos #linha2 .pina div{
+  background-image: url(../img/pinacotecasp.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
 }
-#destinos .linha2 div:nth-child(2){
+#destinos #linha2 .pina{
+  display:flex;
+  flex-direction:column;
+}
+#destinos #linha2 .luz div{
   background-image: url(../img/luz.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
 }
-#destinos .linha2 div:nth-child(3){
+#destinos #linha2 .luz{
+  display:flex;
+  flex-direction:column;
+}
+#destinos #linha2 .glrdorock div{
   background-image: url(../img/glrdorock.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
+}
+#destinos #linha2 .glrdorock{
+  display:flex;
+  flex-direction:column;
 }
 /* DEFINICAO DOS DESTINOS LINHA 3 */
-#destinos .linha3 div:nth-child(1){
-  background-image: url(../img/pacaembu.png); 
+#destinos #linha3 .pacaembu div{
+  background-image: url(../img/pacaembu.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
 }
-#destinos .linha3 div:nth-child(2){
+#destinos #linha3 .pacaembu{
+  display:flex;
+  flex-direction:column;
+}
+#destinos #linha3 .mac div{
   background-image: url(../img/mac.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
 }
-#destinos .linha3 div:nth-child(3){
-  background-image: url(../img/luz.png);
+#destinos #linha3 .mac{
+  display:flex;
+  flex-direction:column;
+}
+#destinos #linha3 .casabr div{
+  background-image: url(../img/casabr.png);
   background-size: cover;
+  border: 3px solid rgb(109, 91, 151);
+}
+#destinos #linha3 .casabr{
+  display:flex;
+  flex-direction:column;
 }
 @media(max-width: 400px){
   #primeira{

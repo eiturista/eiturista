@@ -1,5 +1,5 @@
 body{
-  
+    
     overflow-y: hidden;
 }
 
@@ -19,13 +19,23 @@ section{
 }
 section div form input{
     height: 20px;
+    border-radius: 5px;
+    cursor: context-menu;
+    color: rgb(82, 64, 119);
+    text-align: center;
+}
+section div form textarea{
+    border-radius: 5px;
+    cursor: context-menu;
+    color: rgb(82, 64, 119);
+    
 }
 .logoformulario{
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 65vw
-
+    
 }
 .logoformulario img{
     width: 500px;
@@ -48,10 +58,6 @@ section div form input{
 .formulario2{
     display:none;
 }
-
-input{
-    border-radius: 5px;
-}
 form p{
     font-family: 'Montserrat', sans-serif;  
     margin-bottom: -8px;
@@ -72,6 +78,15 @@ button{
     font-family: 'Playfair Display', serif;
     
 }
+button:hover{
+    background-color: rgb(82, 64, 119);
+}
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    transform: translateX(-4px);
+}
 
 @media(max-width: 400px){
     .formulario{
@@ -83,7 +98,7 @@ button{
         /* text-align: left; */
         margin-left:3%;
         flex-direction: row;
-
+        
     }  
     .logoformulario{
         display:none;

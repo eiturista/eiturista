@@ -1,5 +1,43 @@
 section{
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    display:flex;
+    flex-direction: column;
+}
+
+.fotos{
+    width: 100vw;
+    height: 70vh;
+    margin-top: 5px;
+    margin-bottom: -100px;
+    text-align: center;
+}
+.fotos img{
+    height: 80%;
+    width: 80%;
+}
+.nossaequipe{
+    color:rgb(109,91,151);
+    margin-left:12%;
+}
+.ancoras{
+    display:flex;
+    color:black;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 230px;
+    margin-left: 115px;
+    text-align: center;
+}
+.ancoras a{
+    color:black;
+    justify-content: space-around;
+    text-align: center;
+}
+section  p{
+    font-family: 'Merienda', cursive;  
+    color:purple;
+}
+section p:hover{
+    transform: scale(1.1);
 }

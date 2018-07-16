@@ -63,7 +63,7 @@
 }
 #carrossel div:hover{
   filter: grayscale(50%);
-  transition: 0.5s;
+  transition: 1s;
 }
 .lado1 div{
   height: 160px;
@@ -77,6 +77,27 @@
   background-image: url(../img/iconerj.png);
   background-size: cover;
 }
+.seta1{
+  height: 85px;
+  width: 85px;
+  background-image: url(../img/arrow-point-to-left.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.seta2{
+  height: 85px;
+  width: 85px;
+  background-image: url(../img/arrow-point-to-right.png);
+  background-size: cover;
+  cursor: pointer;
+}
+.seta1:hover{
+  filter: grayscale(50%);
+}
+.seta2:hover{
+  filter: grayscale(50%);
+}
+
 /* CRIAR ESTRUTURA SUBTEMAS */
 #subtemas{
   display: flex;

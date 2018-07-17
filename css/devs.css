@@ -1,0 +1,33 @@
+#nossaequipe{
+    margin-left:12%;
+    color:rgb(109,91,151);
+    margin-bottom: 50px;
+    border-bottom: rgb(109, 91, 151) solid 1px;
+    font-family: 'Playfair Display', serif;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    margin: 3px 0;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+section div{
+    transform: skewX(-5deg);
+    display: flex;
+    widows: 100%;
+    justify-content: center;
+}
+
+section div div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.h3equipe{
+    color: rgb(109,91,151);
+    font-family: 'Playfair Display', serif;
+}

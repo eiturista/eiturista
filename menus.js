@@ -4,7 +4,8 @@ const botaoLogin = document.querySelector(".logar");
 const botaoCadastro = document.querySelector(".cadastrar");
 const telaCadastrar = document.querySelector(".cadastro");
 const telaLogar = document.querySelector(".login");
-
+const linkLogin = document.querySelector(".link_login");
+const linkCadastro = document.querySelector(".link_cadastro");
 
 function aparecerMenu(){
         if(!botaoIcone.classList.contains("active")){
@@ -19,32 +20,24 @@ function aparecerMenu(){
         }
 }
 
-function cadastrar(){
+function mostrarTelaCadastrar(){
     if(!telaCadastrar.classList.contains("active")){
         telaCadastrar.classList.add("active");
         loginCadastro.classList.remove("active");
         telaLogar.classList.remove("active");    
     }
-    console.log("cadastrar");
-    // else{
-    //     loginCadastro.classList.remove("active");
-    //     botaoIcone.classList.remove("active");
-    // }
 }
 
-function logar(){
+function mostrarTelaLogar(){
     if(!telaLogar.classList.contains("active")){
         telaLogar.classList.add("active");
         loginCadastro.classList.remove("active");
         telaCadastrar.classList.remove("active");    
     }
-    console.log("logar");
-    // else{
-    //     loginCadastro.classList.remove("active");
-    //     botaoIcone.classList.remove("active");
-    // }
 }
 
 botaoIcone.onclick = aparecerMenu;
-botaoCadastro.onclick = cadastrar;
-botaoLogin.onclick = logar;
+botaoCadastro.onclick = mostrarTelaCadastrar;
+botaoLogin.onclick = mostrarTelaLogar;
+linkLogin.onclick = mostrarTelaLogar;
+linkCadastro.onclick = mostrarTelaCadastrar;

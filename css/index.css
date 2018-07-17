@@ -158,24 +158,29 @@
   align-items: center;
   display:flex;
   width: 100vw;
-  height: 40vh;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 #destinos #linha2{
   align-items: center;
   display:flex;
   width: 100vw;
-  height: 40vh;
   justify-content: space-around;
-}#destinos #linha3{
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+#destinos #linha3{
   align-items: center;
   display:flex;
   width: 100vw;
-  height: 40vh;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px 0;
 }
 
-#destinos #linha1 div{
+/* #destinos #linha1 div{
   width: 12vw;
   height: 38vh;
   border-radius: 15%;
@@ -189,7 +194,7 @@
   width: 12vw;
   height: 38vh;
   border-radius: 15%;
-}
+} */
 #destinos p{
   text-align: center;
   justify-content: center;
@@ -309,6 +314,11 @@
 #destinos #linha3 .casabr{
   display:flex;
   flex-direction:column;
+}
+#lugar{
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
 }
 @media(max-width: 400px){
   #primeira{

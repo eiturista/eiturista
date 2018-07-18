@@ -1,0 +1,63 @@
+#container{
+    margin: 0 10%;
+}
+
+.slick-slide{
+    outline: none;
+    z-index: 10;
+}
+
+.item{
+    margin: 21.4% 19.2%;
+    padding: 5px 5px;
+    border-radius: 100%;
+    border: 5px solid rgb(109, 91, 151);
+    height: 160px;
+    width: 160px;
+    background-size: cover;
+    filter: grayscale(75%);
+    transition: 0.8s;
+}
+
+.item:hover{
+    
+    transition: 0.5s;
+}
+.img-sp{
+    background-image: url(../img/iconesp.png);
+    
+}
+.img-rj{
+    background-image: url(../img/iconerj.png);
+}
+.img-cwb{
+    background-image: url(../img/iconecwb.png);
+}
+
+.slick-dotted .slick-current .item {
+  transform: scale(1.3);
+  filter: grayscale(0);
+  transition: 1.3s;
+  
+}
+
+.slick-prev, .slick-next{
+    width: 10%;
+    height: 100%;
+}
+
+.slick-next{
+    left: 89%;
+}
+
+.slick-prev:before {
+    content: url('../img/arrow-point-to-left.png');
+
+  }
+.slick-next:before {
+    content: url('../img/arrow-point-to-right.png');   
+}
+
+.slick-arrow{
+    z-index: 10;
+}

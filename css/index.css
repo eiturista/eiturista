@@ -26,7 +26,6 @@
 }
 #primeira p{
   font-size:15pt;
-  margin-bottom: 100px;
   font-family: 'Merienda', cursive;   
   flex-direction: column;
   justify-content: center;
@@ -102,6 +101,7 @@
 #subtemas{
   display: flex;
   justify-content: space-evenly;
+  margin-top: 85px;
   width: 100%;
 }
 #subtemas div{

@@ -1,0 +1,12 @@
+.adicionar{
+    background-color: rgb(109, 91, 151);
+    border-radius: 50%;
+    width:  30px;
+    height: 30px;
+}
+
+.adicionar:checked{
+    transform: rotateX(90deg);
+    transition: 0.3s;
+    background-color: rgb();
+}

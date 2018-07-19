@@ -20,7 +20,6 @@
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-
   <title>Ei!Turista</title>
 </head>
 <body>
@@ -209,12 +208,7 @@
             <button>Adicionar ao Roteiro</button>
           </div>
         </div>
-  
-        
   </section>
-  
-  
-  
   
   <footer>
     <div class="links">
@@ -285,6 +279,13 @@
         }
         ]
     }); 
+    $(window).resize(function () {
+      $('.js-slider').not('.slick-initialized').slick('resize');
+    });
+
+    $(window).on('orientationchange', function () {
+      $('.js-slider').not('.slick-initialized').slick('resize');
+    });
 </script>
 </body>
 </html>

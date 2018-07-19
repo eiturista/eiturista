@@ -11,7 +11,7 @@ header > div > ul > li > input{
   position: absolute;
   top:8vh;
   left:78vw;
-  border-radius: 20px;
+  border-radius: 20px;  
   display: none;
   flex-direction: column;
   justify-content: center; 
@@ -45,11 +45,17 @@ ul{
   width: 10vw;
   align-items: center;
 }
+.usuario button:hover{
+  background-color:rgba(255,255,255);
+  color:rgb(109, 91, 151);
+}
 
 .space{
   height: 1vh;
 }
-
+.usuario   input:hover{
+  box-shadow: 1px 1px 1px  white;
+}
 /* TELA LOGIN */
 .login{
   width: 16vw;
@@ -99,6 +105,11 @@ ul{
   width: 8vw;
   align-items: center;
 }
+.login button:hover{
+  background-color:rgba(255,255,255);
+  color:rgb(109, 91, 151);
+
+}
 .opcoes{
   text-align: left;
   text-decoration: black;
@@ -108,6 +119,9 @@ ul{
 }
 .login a{
   color: black;
+}
+.login input:hover{
+  box-shadow: 1px 1px 1px  white;
 }
 
 /* TELA CADASTRO */
@@ -171,6 +185,9 @@ ul{
 }
 .cadastro a{
   color: black;
+}
+.cadastro input:hover{
+  box-shadow: 1px 1px 1px  white;
 }
 
 .active{

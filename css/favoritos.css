@@ -101,3 +101,7 @@ footer div img{
         margin: 5%;
     }
 }
+
+.usuario{
+    display: none;
+}

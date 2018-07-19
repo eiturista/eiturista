@@ -31,71 +31,6 @@
   justify-content: center;
   text-align: center;
 }
-#carrossel{
-  height: 250px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;  
-  text-align: center;
-  margin-bottom: 150px;
-}
-
-#carrossel > div > div{
-  border-radius: 100%;
-  border: 5px solid rgb(109, 91, 151);
-  cursor: pointer;
-}
-#carrossel p{
-  font-family: 'Merienda', cursive;
-}
-
-
-.sp{
-  height: 200px;
-  width: 200px;
-  background-image: url(../img/iconesp.png);
-  background-size: cover;
-  border-radius: 100%;
-  border: 5px solid rgb(109, 91, 151);
-  cursor: pointer;
-}
-#carrossel div:hover{
-  filter: grayscale(50%);
-  transition: 1s;
-}
-.lado1 div{
-  height: 160px;
-  width: 160px;
-  background-image: url(../img/iconecwb.png);
-  background-size: cover;
-}
-.lado2 div{
-  height: 160px;
-  width: 160px;
-  background-image: url(../img/iconerj.png);
-  background-size: cover;
-}
-.seta1{
-  height: 85px;
-  width: 85px;
-  background-image: url(../img/arrow-point-to-left.png);
-  background-size: cover;
-  cursor: pointer;
-}
-.seta2{
-  height: 85px;
-  width: 85px;
-  background-image: url(../img/arrow-point-to-right.png);
-  background-size: cover;
-  cursor: pointer;
-}
-.seta1:hover{
-  filter: grayscale(50%);
-}
-.seta2:hover{
-  filter: grayscale(50%);
-}
 
 /* CRIAR ESTRUTURA SUBTEMAS */
 #subtemas{
@@ -180,21 +115,6 @@
   margin: 10px 0;
 }
 
-/* #destinos #linha1 div{
-  width: 12vw;
-  height: 38vh;
-  border-radius: 15%;
-}
-#destinos #linha2 div{
-  width: 12vw;
-  height: 38vh;
-  border-radius: 15%;
-}
-#destinos #linha3 div{
-  width: 12vw;
-  height: 38vh;
-  border-radius: 15%;
-} */
 #destinos p{
   text-align: center;
   justify-content: center;
@@ -220,12 +140,12 @@
 #destinos button:hover{
   background-color: rgb(82, 64, 119);
 }
-#destinos button:active {
+/* #destinos button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   transform: translateX(-4px);
-}
+} */
 #destinos span{
   font-weight: bold;
 }
@@ -320,6 +240,12 @@
   height: 160px;
   border-radius: 100%;
 }
+
+input[type='checkbox']{ 
+  height: 20px; width: 20px; 
+  color: #212121;
+}
+
 @media(max-width: 400px){
   #primeira{
     width: 100%;

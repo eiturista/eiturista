@@ -31,3 +31,10 @@ section div div{
     color: rgb(109,91,151);
     font-family: 'Playfair Display', serif;
 }
+.equipezona img{
+    width: 230px;
+    height: 280px;
+}
+.equipezona p{
+    margin-top:0;
+}
